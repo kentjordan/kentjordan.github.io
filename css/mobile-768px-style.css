@@ -1,5 +1,120 @@
-@media screen and (max-width: 768px){
-    .mobile-nav-bar{
+:root{
+    --primary-color: #111111;
+    --primary-font: 'Oswald', sans-serif;
+}
+
+
+@media screen and (max-width: 856px){
+   
+    .nav-item-menu-container{
+        display: none;
+    }
+
+    .nav-bar{
+        top: 1rem;
+        bottom: 97rem;
+        justify-content: space-between;
+    }
+
+    .mobile-nav-bar-hamburger-icon{
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 .5rem 0 0; 
+        padding: 0; 
+
+    }
+
+    .mobile-nav-bar-hamburger-icon svg{
+        
+        width: 2rem;
+        height: 2rem;
+        
+    }
+
+    .mobile-nav-item-menu-container{
+
+        z-index: 2;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+
+        background-color: var(--primary-color);
+
+        border-left: .1rem solid #fff;
+
+        height: 100vh;
+
+        right: 0;
+        
+    }
+
+    .nav-item-divider{
+        transform: rotate(90deg);
+    }
+
+    .mobile-nav-item-menu-container ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0rem 1rem 0 1rem;
+    }
+
+    .mobile-nav-item-menu-container .nav-item{
+        list-style-type: none;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .mobile-nav-item-menu-container .nav-item a:hover{
+        background-color: #FFF;
+        color: #000;
+        border-radius: 0.25rem;
+        padding: .5rem;
+        transition: .25s;
+    }
     
+    .mobile-nav-item-menu-container .nav-item a{
+        text-decoration: none;
+        color: #FFF;
+    }
+    .mobile-nav-item-menu-container .nav-item-contact{
+        list-style-type: none;
+        float: left;
+        margin: .5rem;
+    }
+    
+    .mobile-nav-item-menu-container .nav-item-contact img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .nav-item-close{
+        
+        padding: .75rem 0 .75rem 0;
+        width: 100%;
+        background-color: #ff0000;
+        position: absolute;
+        bottom: 0;
+
+        list-style-type: none;
+        
+        text-align: center;
+    }
+
+    .nav-item-close a{
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    .home-header-text{
+        font-size: 2rem;
     }
 }

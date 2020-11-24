@@ -10,7 +10,7 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
 
 *{
@@ -20,37 +20,51 @@ body{
 
 /* DESKTOP NAVIGATION BAR */
 
-.desktop-nav-bar{
-
-    z-index: 5;
+.nav-bar{
 
     position: absolute;
 
+    z-index: 2;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     background-color: rgba(44, 44, 44, 0.52);
-    width: 96%;
-    height: 10%;
 
-    bottom: 0;
+    width: 90%;
+    height: 3rem;
 
-    border-radius: .5rem;
-    margin: 0 0 1rem 0;
+    bottom: 1rem;
+
+    border-radius: .75rem;
+
+    padding: .5rem;
+}
+
+.mobile-nav-bar-hamburger-icon{
+    display: none;
+    
+}
+ 
+.mobile-nav-bar-hamburger-icon svg{
+    fill: #FFF;
 }
 
 .logo-title-container{
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 .5rem; 
 
-    color: #FFF
+    color: #FFF;
+    height: 100%;
 }
 
 .logo-title-container img{
-    width: 2.5rem;
-    height: 2.3rem;
+    width: 2.3rem;
+    height: 2rem;
 }
 
 .logo-title-container *{
@@ -59,12 +73,14 @@ body{
 
 .nav-item-menu-container{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    margin: 0 2rem 0 0;
+    margin: 0 .5rem 0 0;
 
-    color: #FFF
+    color: #FFF;
+    height: 100%;
+
 }
 
 .nav-item-menu-container ul{
@@ -111,9 +127,18 @@ body{
 
 /* END DESKTOP NAVIGATION BAR */
 
+
+/* START MOBILE  NAV BAR */
+
+.mobile-nav-item-menu-container{
+    display: none;
+}
+
+/*  END MOBILE NAV BAR*/
+
 /* START PAGE 1 */
 
-.page-1{
+.home{
 
     display: flex;
     justify-content: center;
@@ -123,34 +148,56 @@ body{
     height: 100vh;
 
     color: #FFF;
-}
 
+    background-color: green;
+}
 
 #particles-js{
 
 }
 
 .particles-js{
-    z-index: 1;
-    width: 100%;
+    
+    z-index: 0;
+    
     height: 100%;
     background-color: var(--primary-color);
-    position: absolute;
+
+    width: 100%;
+    
 }
 
-.page-1-header{
+.home-header{
     z-index: 1;
     position: absolute;
 }
 
-.page-1-header-text{ 
+.home-header-text{ 
     font-size: 3rem;
 }
 
 /* END PAGE 1 */
 
-.page-2{
-    background-color: blue;
+.my-portoflio{
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+    height: 100vh;
+}
+
+.skills{
+    background-color: #111111;
+    width: 100%;
+    height: 100vh;
+}
+
+.about-me{
+    background-color: rgb(121, 121, 121);
+    width: 100%;
+    height: 100vh;
+}
+
+.vlog{
+    background-color: rgb(68, 68, 68);
     width: 100%;
     height: 100vh;
 }
