@@ -1,4 +1,4 @@
-var BgAudio = document.getElementById("bg-audio");
+
 
 const mNavHambergurIcon = document.querySelector('.mobile-nav-bar-hamburger-icon');
 const mNavItemContainer = document.querySelector('.mobile-nav-item-menu-container');
@@ -6,9 +6,6 @@ const mNavItemCloseBtn = document.querySelector('.nav-item-close');
 
 function main(){
 
-    window.addEventListener('DOMContentLoaded', ()=>{
-       BgAudio.play();
-    });
     mNavItemContainer.style.visibility = "hidden";
     MobileNavHamburgerButton();    
 
