@@ -170,6 +170,7 @@ body{
 .home-header{
     z-index: 1;
     position: absolute;
+    text-align: center;
 }
 
 .home-header-text{ 
