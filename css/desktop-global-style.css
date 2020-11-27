@@ -5,6 +5,7 @@
 
 html{
     font-family: var(--primary-font);
+    overflow: hidden;
 }
 
 body{
@@ -135,6 +136,40 @@ body{
 }
 
 /*  END MOBILE NAV BAR*/
+
+/* START WELCOME */
+
+.welcome{
+    
+    
+    z-index: 5;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+
+    text-align: center;
+
+    font-size: 1.5rem;
+
+    transition: .35s;
+    opacity: 1;
+
+}
+
+.welcome *{
+    margin: 1rem 25% 0 25%;
+}
+
+/* END WELCOME */
 
 /* START PAGE 1 */
 
