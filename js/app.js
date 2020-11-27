@@ -12,13 +12,17 @@ function main(){
     MobileNavHamburgerButton();    
 
     var welcome = document.querySelector('.welcome'); 
+    var welcomeH1 = document.querySelector('.welcome h1');
+    var welcomeH5 = document.querySelector('.welcome h5');
 
     window.onload = () => {
+        welcomeH1.innerHTML = 'PAGE LOADED!';
+        welcomeH5.innerHTML = 'CLICK ANYWHERE TO CONTINUE';
 
         welcome.addEventListener('click', ()=>{
 
             welcome.style.opacity = '0';
-            
+            welcome.style.zIndex = '-1';
             document.documentElement.style.overflow ='visible';
 
             if(document.getElementById('typed-config-js') <= 0){
@@ -29,6 +33,7 @@ function main(){
             }
 
             bgAudio.play();
+
         });
     }
 
