@@ -6,16 +6,21 @@ const mNavItemCloseBtn = document.querySelector('.nav-item-close');
 
 var bgAudio = document.querySelector('#bgAudio');
 
+var welcome = document.querySelector('.welcome'); 
+var welcomeH1 = document.querySelector('.welcome h1');
+var welcomeH5 = document.querySelector('.welcome h5');
+
 function main(){
 
     mNavItemContainer.style.visibility = "hidden";
     MobileNavHamburgerButton();    
 
-    var welcome = document.querySelector('.welcome'); 
-    var welcomeH1 = document.querySelector('.welcome h1');
-    var welcomeH5 = document.querySelector('.welcome h5');
+    pageOnLoad();
+}
 
+function pageOnLoad(){
     window.onload = () => {
+
         welcomeH1.innerHTML = 'PAGE LOADED!';
         welcomeH5.innerHTML = 'CLICK ANYWHERE TO CONTINUE';
 

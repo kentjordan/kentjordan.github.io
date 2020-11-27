@@ -1,12 +1,18 @@
 var type = new Typed('.home-header-text', {
-    strings: ['HELLO THERE! :D',
-                'I\'M KENT JORDAN,',
+    strings: ['HELLO (~˘▾˘)~',
+                'I\'M KENT JORDAN',
+                'A SOFTWARE ENGINEER',
+                'AND',
+                'A DATA SCIENTIST',
+                'IN THE MAKING ¯\_(ツ)_/¯',
+                'AND',
                 'I\'M INTERESTED IN',
-                'ARTIFICIAL INTELLIGENCE',
+                'ARTIFICIAL INTELLIGENCE ',
                 'AND',
                 'COMPUTER GRAPHICS'],
-    typeSpeed: 20,
-    backSpeed: 5,
+    typeSpeed: 10,
+    backSpeed: 0,
+    smartBackspace: true, 
     cursorChar: '_',            
     
     smartBackspace: true, // this is a default
