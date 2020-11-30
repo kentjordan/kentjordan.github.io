@@ -2,22 +2,24 @@
 
     <head>
  
-        <title>Portfolio - Kent Jordan</title>
+        <title>K. Jordan</title>
         
         <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
 
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="./css/desktop-global-style.css" />
         <link rel="stylesheet" href="./css/mobile-768px-style.css" />
+        <link rel="stylesheet" href="./css/mobile-425px-style.css" />
         <link rel="icon" href="./ic/logo.png"/>
 
         <audio id="bgAudio" src="./audio/bg-audio.mp3" loop></audio>
       
     </head>
 
-    <body>    
+    <body>
 
         <div class="welcome">
             <h1>PAGE IS BEING LOAD</h1>
@@ -28,14 +30,14 @@
 
             <div class="logo-title-container">
                 <img src="./ic/logo.png" />
-                <h3>PORTFOLIO</h3>
+                <h3>K. JORDAN</h3>
             </div>
 
             <div class="nav-item-menu-container">
                 <ul>           
-                    <li class="nav-item"><a href="javascript:void(0)">MY PORTFOLIO</a></li>  
+                    <li class="nav-item"><a href="#about-me">ABOUT ME</a></li>                
+                    <li class="nav-item"><a href="#my-portfolio">PORTFOLIO</a></li>  
                     <li class="nav-item"><a href="javascript:void(0)">SKILLS</a></li>      
-                    <li class="nav-item"><a href="javascript:void(0)">ABOUT ME</a></li>                
                     <li class="nav-item"><a href="javascript:void(0)">VLOG</a></li>          
                     <li class="nav-item-contact nav-item-divider"></li>
                     <li class="nav-item-contact"><a href="https://www.facebook.com/kentaki.dev" target="blank"><img src="./ic/facebook.png" /></a></li>
@@ -43,7 +45,6 @@
                     <li class="nav-item-contact"><a href="#"><img src="./ic/email.png" /></a></li>              
                 </ul>
             </div>
-
 
             <div class="mobile-nav-bar-hamburger-icon">
                 <svg viewBox="0 0 100 80" width="40" height="40">
@@ -57,9 +58,9 @@
 
         <div class="mobile-nav-item-menu-container">
             <ul>
-                <li class="nav-item"><a href="javascript:void(0)">MY PORTFOLIO</a></li>  
-                <li class="nav-item"><a href="javascript:void(0)">SKILLS</a></li>      
-                <li class="nav-item"><a href="javascript:void(0)">ABOUT ME</a></li>                
+                <li class="nav-item"><a href="javascript:void(0)">ABOUT ME</a></li>   
+                <li class="nav-item"><a href="#my-portfolio">PORTFOLIO</a></li>  
+                <li class="nav-item"><a href="javascript:void(0)">SKILLS</a></li>                                  
                 <li class="nav-item"><a href="javascript:void(0)">VLOG</a></li>          
                 <li class="nav-item-contact nav-item-divider"></li>
                 <li class="nav-item-contact"><a href="https://www.facebook.com/kentaki.dev" target="blank"><img src="./ic/facebook.png" /></a></li>
@@ -80,13 +81,93 @@
             </div>
 
         </div>
-<!-- 
-        <div class="my-portoflio">
+
+        <div id="about-me" class="about-me">
+            
+            <img class="profile-picture" src="./img/me.jpg" width="150rem"/>
+
+            <div class="about-me-text-container">
+                <h1>Kent Jordan</h1>
+                <h4>I'm first year BS Computer Science student at FAITH Colleges. A Software Engineer and Data Scientist in the making. I'm interested in Artificial Intelligence and Computer Graphics.</h4>
+            </div>        
 
         </div>
 
+        <!-- <div class="quote">
+            
+            <img class="profile-picture" src="./img/me.jpg" width="150rem"/>
 
-        <div class="skills">
+            <div class="quote-text-container">
+                <h1>Kent Jordan</h1>
+                <h4>I'm first year BS Computer Science student at FAITH Colleges. A Software Engineer and Data Scientist in the making. I'm interested in Artificial Intelligence and Computer Graphics.</h4>
+            </div>        
+
+        </div> -->
+
+        <div id="my-portfolio" class="my-portoflio">
+
+            <div class="covid-data-tracker">
+
+                <div class="portfolio-item-details">
+
+                    <h3>COVID-19 Data Tracker for Android</h3>
+                    <h1>CASES & VACCINE TRACKER</h1>
+                    <div class="portoflio-item-seperator"></div>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corporis mollitia iusto earum! Minima in numquam ab odit, ipsa necessitatibus provident libero repudiandae, sed quidem quaerat quo quia natus dolorem. Maxime quae sed mollitia, inventore quibusdam deserunt qui. Distinctio voluptatum cumque unde accusantium illo non molestias dolores perferendis eius itaque.</h6>
+                    
+                    <div class="portfolio-btn-container">
+                        <div class="portfolio-btn">
+                            <h6>FIND OUT HOW</h6>
+                        </div>
+
+                        <div class="portfolio-btn">
+                            <h6>DOWNLOAD NOW</h6>
+                        </div>
+                    </div>                    
+        
+                </div>
+
+                <div class="portfolio-item-showcase">
+
+                    <div class="bg-geometric">
+
+                    </div>
+
+                    <div class="portfolio-img-container">                
+                        <img id="covid-data-tracker-2" src="./img/covid-data-tracker-5.png"/>
+                        <img id="covid-data-tracker-1" src="./img/covid-data-tracker-1.png"/>
+                        <img id="covid-data-tracker-3" src="./img/covid-data-tracker-2.png"/>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="digital-sti-lipa">
+
+                <div class="portfolio-item-details">
+
+                    <h3>Digital STI Lipa</h3>
+                    <h1>VIRTUAL REALITY OF STI LIPA</h1>
+                    <div class="portoflio-item-seperator"></div>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corporis mollitia iusto earum! Minima in numquam ab odit, ipsa necessitatibus provident libero repudiandae, sed quidem quaerat quo quia natus dolorem. Maxime quae sed mollitia, inventore quibusdam deserunt qui. Distinctio voluptatum cumque unde accusantium illo non molestias dolores perferendis eius itaque.</h6>
+                    
+                    <div class="portfolio-btn-container">
+                        <div class="portfolio-btn">
+                            <h6>FIND OUT HOW</h6>
+                        </div>
+                    </div>                    
+        
+                </div>
+
+                <div class="portfolio-item-showcase">
+        
+                </div>
+
+            </div>
+
+        </div>
+
+  <!--       <div class="skills">
 
         </div>
 

@@ -10,7 +10,11 @@ var welcome = document.querySelector('.welcome');
 var welcomeH1 = document.querySelector('.welcome h1');
 var welcomeH5 = document.querySelector('.welcome h5');
 
+const DIV_myPortolfio = document.querySelector('.my-portoflio');
+
 function main(){
+
+    DIV_myPortolfio.style.height = 100 * 2+ 'vh';
 
     mNavItemContainer.style.visibility = "hidden";
     MobileNavHamburgerButton();    
@@ -19,6 +23,7 @@ function main(){
 }
 
 function pageOnLoad(){
+    
     window.onload = () => {
 
         welcomeH1.innerHTML = 'PAGE LOADED!';

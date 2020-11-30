@@ -1,9 +1,11 @@
 :root{
-    --primary-color: #111111;
+    --primary-color-white: #f0f0f0;
+    --primary-color-black: #111111;
     --primary-font: 'Oswald', sans-serif;
 }
 
 html{
+    scroll-behavior: smooth;
     font-family: var(--primary-font);
     overflow: hidden;
 }
@@ -59,7 +61,7 @@ body{
 
     margin: 0 0 0 .5rem; 
 
-    color: #FFF;
+    color: var(--primary-color-white);
     height: 100%;
 }
 
@@ -79,7 +81,7 @@ body{
 
     margin: 0 .5rem 0 0;
 
-    color: #FFF;
+    color: var(--primary-color-white);
     height: 100%;
 
 }
@@ -91,8 +93,8 @@ body{
 }
 
 .nav-item-menu-container .nav-item a:hover{
-    background-color: #FFF;
-    color: #000;
+    background-color: var(--primary-color-white);
+    color: var(--primary-color-black);
     border-radius: 0.25rem;
     padding: .5rem;
     transition: .25s;
@@ -143,7 +145,7 @@ body{
     
     
     z-index: 5;
-    position: absolute;
+    position: fixed;
 
     display: flex;
     align-items: center;
@@ -196,7 +198,7 @@ body{
     z-index: 0;
     
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-black);
 
     width: 100%;
     
@@ -214,11 +216,184 @@ body{
 
 /* END PAGE 1 */
 
+/* START QUOTE */
+/* 
+.quote{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 80vh;
+
+    text-align: center;
+}
+
+.profile-picture{
+    border-radius: 100%;
+    width: 8rem;
+    height:  8rem;
+}
+
+.quote h1, h4{
+    font-weight: 300;
+}
+
+.quote h1{
+    font-size: 3rem;
+}
+
+.quote h4{
+    font-size: 1.25rem;    
+    margin-top: 2rem;
+}
+
+.quote-text-container{
+    border: 1rem solid green; 
+
+    width: 50%;    
+    margin: 2rem;
+ }  */
+
+/* END QUOTE */
+
+/* START PORTOFLIO */
+
 .my-portoflio{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     background-color: rgb(68, 68, 68);
+    width: 100%;
+
+}
+
+.covid-data-tracker{
+    overflow: hidden;
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-item-details{
+    width: 50%;
+    
+    margin: 0rem 1.5rem 1.5rem 3rem;
+    color: var(--primary-color-white);
+
+    z-index: 2;
+}
+
+.portfolio-item-details *{
+    margin: 1.5rem 0 1.5rem 0;
+    z-index: 2;
+}
+
+.portfolio-item-details h1{
+    font-size: 3rem;  
+}
+
+.portfolio-item-details h3{
+    font-size: 1.5rem; 
+}
+
+.portfolio-item-details h6{
+    font-weight: 400; 
+    font-size: 1.2rem;
+}
+
+.portfolio-item-showcase{
+
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item-showcase img{
+    width: 16rem;
+}
+
+.bg-geometric{
+    
+    position: absolute;
+
+    margin: 0 -90% 0 0;
+
+    background-color: #00000028;
+
+    width: 100%;
+    height: 200%;
+    transform: rotate(-45deg);
+    border-radius: 2rem;
+}
+
+#covid-data-tracker-1{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+.portfolio-img-container{
+
+    display: flex;
+    position: relative;  
+}
+
+.portoflio-item-seperator{
+    width: 4rem;
+    height: .25rem;
+    background-color: var(--primary-color-white);
+}
+
+.portfolio-btn-container{
+    display: flex;
+}
+
+.portfolio-btn{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 1.2rem 0 0;
+
+    width: 14rem;
+    height: 3rem;
+    border: .3rem solid var(--primary-color-white);
+    border-radius: .24rem;
+
+}
+
+/* END PORTOFLIO */
+
+.covid-data-tracker{
+    background-color: #4CB050;
     width: 100%;
     height: 100vh;
 }
+
+.digital-sti-lipa{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:#0072BC;
+    width: 100%;
+    height: 100vh;
+}
+
+/* END PORTOFLIO */
 
 .skills{
     background-color: #111111;
@@ -226,11 +401,51 @@ body{
     height: 100vh;
 }
 
+/*  */
+
+
 .about-me{
-    background-color: rgb(121, 121, 121);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(240, 240, 240);
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+
+    text-align: center;
 }
+
+.profile-picture{
+    border-radius: 100%;
+    width: 8rem;
+    height:  8rem;
+}
+
+.about-me h1, h4{
+    font-weight: 300;
+}
+
+.about-me h1{
+    font-size: 3rem;
+}
+
+.about-me h4{
+    font-size: 1.25rem;    
+    margin-top: 2rem;
+}
+
+.about-me-text-container{
+    /* border: 1rem solid green; */
+
+    width: 50%;    
+    margin: 2rem;
+}
+
+
+/*  */
 
 .vlog{
     background-color: rgb(68, 68, 68);
@@ -244,10 +459,12 @@ body{
     align-items: center;
     justify-content: center;
 
-    color: #FFF;
+    color: var(--primary-color-white);
     font-weight: 700;
 
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-black);
     width: 100%;
     height: 8vh;
+
+    bottom: 0;
 }

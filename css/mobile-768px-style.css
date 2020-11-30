@@ -117,4 +117,13 @@
     .home-header-text{
         font-size: 2rem;
     }
+
+    .about-me h1{
+        font-size: 2.5rem;
+    }
+    
+    .about-me h4{
+        font-size: 1rem;    
+    }
+
 }
