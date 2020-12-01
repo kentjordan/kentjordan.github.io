@@ -467,7 +467,7 @@ body{
     width: 100%;
     height: auto;
 
-    background: url('./img/phone-frame.png');
+    background: url('../img/phone-frame.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
