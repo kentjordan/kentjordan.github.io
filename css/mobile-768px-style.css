@@ -10,9 +10,7 @@
         display: none;
     }
 
-    .nav-bar{
-        top: 1rem;
-        bottom: 97rem;
+    .nav-bar{        
         justify-content: space-between;
     }
 
@@ -36,7 +34,7 @@
 
     .mobile-nav-item-menu-container{
 
-        z-index: 10;
+        z-index: 5;
 
         display: flex;
         align-items: center;
@@ -46,7 +44,7 @@
 
         background-color: var(--primary-color);
 
-        border-left: .1rem solid #fff;
+        border-left: .1rem solid #f0f0f0;
 
         height: 100vh;
 
@@ -72,11 +70,16 @@
         text-align: center;
     }
 
-    .mobile-nav-item-menu-container .nav-item a:hover{
-        background-color: #FFF;
-        color: #000;
-        border-radius: 0.25rem;
+    .mobile-nav-item-menu-container .nav-item a{
+
         padding: .5rem;
+
+    }
+
+    .mobile-nav-item-menu-container .nav-item a:hover{
+        background-color: #f0f0f01e;
+        color: var(--primary-color-white);
+        border-radius: 0.25rem;
         transition: .25s;
     }
     
@@ -131,12 +134,12 @@
     }
     
     .portfolio-item-details h3{
-        font-size: 1.15rem; 
+        font-size: 1.25rem; 
     }
     
     .portfolio-item-details h6{
-        font-weight: 400; 
-        font-size: .8rem;
+        font-weight: 300; 
+        font-size: 1.1rem;
     }
 
     .certificates-img-container img{

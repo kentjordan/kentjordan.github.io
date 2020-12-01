@@ -15,6 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;    
+    overflow-x: hidden;
 }
 
 *{
@@ -26,24 +27,26 @@ body{
 
 .nav-bar{
 
-    position: absolute;
-
-    z-index: 2;
+    position: sticky;
+    top: 0;
+    
+    z-index: 5;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    background-color: rgba(44, 44, 44, 0.52);
+    background-color: rgba(25, 25, 25, 1);
 
-    width: 90%;
-    height: 3rem;
+    width: 100%;
+    height: 4rem;
 
-    bottom: 1.24rem;
+    position: -webkit-sticky;
 
-    border-radius: .75rem;
+    padding: .25rem;
 
-    padding: .5rem;
+    border-radius: .25rem;
+
 }
 
 .mobile-nav-bar-hamburger-icon{
@@ -93,11 +96,14 @@ body{
     align-items: center;
 }
 
-.nav-item-menu-container .nav-item a:hover{
-    background-color: var(--primary-color-white);
-    color: var(--primary-color-black);
-    border-radius: 0.25rem;
+.nav-item-menu-container .nav-item a{
     padding: .5rem;
+}
+
+.nav-item-menu-container .nav-item a:hover{
+    background-color: #f0f0f01e;
+    color: var(--primary-color-white);
+    border-radius: 0.25rem;
     transition: .25s;
 }
 
@@ -226,11 +232,13 @@ body{
     justify-content: center;
     align-items: center;
 
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(28, 28, 28);
     width: 100%;
-    height: 32vh;
+    height: 24vh;
 
     text-align: center;
+
+    color: var(--primary-color-white);
 }
 
 .profile-picture{
@@ -264,7 +272,7 @@ body{
 /* START PORTOFLIO */
 
 .my-portoflio{
-
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,12 +289,15 @@ body{
     align-items: center;
     justify-content: space-between;
 
-    background-color: #4CB050;
+    background-color: var(--primary-color-black);
+    /* background-color: #4CB050; */
     width: 100%;
     height: 100vh;
 
     overflow: hidden;
     position: relative; 
+
+    /* border: .2rem solid #ffffff60 */
 }
 
 .portfolio-item-details{
@@ -339,28 +350,27 @@ body{
 
     margin: 0 -90% 0 0;
 
-    background-color: #10101010;
+
+    background-color: #60ad5d;
 
     width: 100%;
     height: 200%;
     transform: rotate(-45deg);
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 .bg-geometric-2{
-
-    z-index: -1;
-
+    
     position: absolute;
 
-    margin: -25% 0 0 -69%;
+    margin: 0 -90% 0 0;
 
-    background-color: #10101010;
+    background-color: #0072bc;
 
     width: 100%;
     height: 200%;
-    transform: rotate(40deg);
-    border-radius: 2rem;
+    transform: rotate(45deg);
+    border-radius: 1rem;
 }
 
 #covid-data-tracker-1{
@@ -397,7 +407,7 @@ body{
 
     width: 56%;
     height: 3rem;
-    border: .3rem solid var(--primary-color-white);
+    border: .18rem solid var(--primary-color-white);
     border-radius: .24rem;
 
     text-align: center;
@@ -425,9 +435,12 @@ body{
     align-items: center;
     justify-content: space-between; 
 
-    background-color:#0072BC;
+    /* background-color:#0072BC; */
+    background-color: var(--primary-color-black);
     width: 100%;
     height: 100vh;
+
+    border-top: .2rem solid #ffffff60
 }
 
 .portoflio-media-container{
@@ -604,7 +617,7 @@ body{
     color: var(--primary-color-white);
     font-weight: 500;
 
-    background-color: var(--primary-color-black);
+    background-color: rgb(25, 25, 25);
     width: 100%;
     height: 8vh;
 

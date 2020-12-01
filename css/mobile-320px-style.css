@@ -1,0 +1,23 @@
+@media screen and (max-width: 320px){
+
+    .portfolio-item-details h1{
+        font-size: 2.5rem;  
+    }
+    
+    .portfolio-item-details h3{
+        font-size: 1rem; 
+    }
+    
+    .portfolio-item-details h6{
+        font-weight: 300; 
+        font-size: .8rem;
+    }
+
+    .certificates-img-container img{
+     
+        height: 10rem;
+        width: 16rem;
+     
+    }
+
+}
