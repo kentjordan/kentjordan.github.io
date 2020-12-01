@@ -45,8 +45,8 @@
         background-color: var(--primary-color);
 
         border-left: .1rem solid #f0f0f0;
-
-        height: 100vh;
+        width: auto;
+        height: 100%;
 
         right: 0;
         
