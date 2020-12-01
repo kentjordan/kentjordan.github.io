@@ -17,8 +17,7 @@
     }
 
     .mobile-nav-bar-hamburger-icon{
-        
-
+    
         display: flex;
         align-items: center;
         justify-content: center;
@@ -37,7 +36,7 @@
 
     .mobile-nav-item-menu-container{
 
-        z-index: 2;
+        z-index: 10;
 
         display: flex;
         align-items: center;
@@ -124,6 +123,27 @@
     
     .about-me h4{
         font-size: 1rem;    
+    }
+
+
+    .portfolio-item-details h1{
+        font-size: 2.65rem;  
+    }
+    
+    .portfolio-item-details h3{
+        font-size: 1.15rem; 
+    }
+    
+    .portfolio-item-details h6{
+        font-weight: 400; 
+        font-size: .8rem;
+    }
+
+    .certificates-img-container img{
+     
+        height: 12rem;
+        width: 18rem;
+     
     }
 
 }
