@@ -151,7 +151,7 @@ body{
 .welcome{
     
     
-    z-index: 5;
+    z-index: 100;
     position: fixed;
 
     display: flex;
