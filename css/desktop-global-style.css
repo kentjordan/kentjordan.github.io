@@ -27,8 +27,8 @@ body{
 
 .nav-bar{
 
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    top: 0;
 
     z-index: 5;
 
@@ -36,18 +36,15 @@ body{
     justify-content: space-between;
     align-items: center;
 
-    background-color: rgba(35, 35, 35, .85);
+    background-color: rgba(35, 35, 35, 0);
 
-    width: 80%;
+    width: 94%;
     height: 4rem;
 
-    position: -webkit-sticky;
+    padding: 1.5rem .2rem 0rem .2rem;
 
-    padding: .2rem .2rem 0rem .2rem;
-
-    border-radius: .24rem .24rem 0 0;
-
-}
+    border-radius: 0 0 .24rem .24rem;
+} 
 
 .mobile-nav-bar-hamburger-icon{
     display: none;
@@ -98,6 +95,9 @@ body{
 
 .nav-item-menu-container .nav-item a{
     padding: .5rem;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.2rem;
 }
 
 .nav-item-menu-container .nav-item a:hover{
@@ -111,11 +111,6 @@ body{
     list-style-type: none;
     float: left;
     margin: .5rem;;
-}
-
-.nav-item-menu-container .nav-item a{
-    text-decoration: none;
-    color: #FFF;
 }
 
 .nav-item-menu-container .nav-item-contact{
@@ -239,7 +234,7 @@ body{
 
     color: var(--primary-color-white);
 
-    margin: 8rem 0 8rem 0;
+    margin: 4rem 0 4rem 0;
 }
 
 .profile-picture{
@@ -615,11 +610,11 @@ body{
 
     /* background-color: rgb(25, 25, 25); */
     width: 100%;
-    height: 4.5rem;
+    height: 4rem;
 
     bottom: 0;
 
-    /* border-top: 1px solid var(--primary-color-white); */
+    border-top: 1px solid var(--primary-color-white);
 
     
 }
