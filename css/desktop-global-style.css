@@ -104,13 +104,13 @@ body{
     background-color: #f0f0f01e;
     color: var(--primary-color-white);
     border-radius: 0.25rem;
-    transition: .25s;
+    transition: 1s;
 }
 
 .nav-item-menu-container .nav-item{
     list-style-type: none;
     float: left;
-    margin: 1rem;;
+    margin: .5rem;;
 }
 
 .nav-item-menu-container .nav-item a{
