@@ -278,7 +278,6 @@ body{
     align-items: center;
     justify-content: center;
 
-    background-color: rgb(68, 68, 68);
     width: 100%;
 
 }
@@ -403,15 +402,12 @@ body{
     align-items: center;
     justify-content: center;
 
-    margin: 0 .5rem 0 .5rem;
-
-    width: 56%;
+    width: 50%;
     height: 3rem;
     border: .18rem solid var(--primary-color-white);
     border-radius: .24rem;
 
     text-align: center;
-
 }
 
 .portfolio-btn h6{

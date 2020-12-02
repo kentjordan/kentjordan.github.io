@@ -6,6 +6,8 @@
         
         <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
 
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
@@ -86,7 +88,7 @@
 
         </div>
 
-        <div class="quote">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="800" class="quote">
             
             <!-- <img class="profile-picture" src="./img/me.jpg" width="150rem"/> -->
 
@@ -97,7 +99,7 @@
 
         </div>
 
-        <div id="my-portfolio" class="my-portoflio">
+        <div id="my-portfolio" class="my-portoflio" data-aos="fade-up" data-aos-offset="300" data-aos-duration="800">
 
             <div class="covid-data-tracker">
 
@@ -109,10 +111,7 @@
                     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corporis mollitia iusto earum! Minima in numquam ab odit, ipsa necessitatibus provident libero repudiandae, sed quidem quaerat quo quia natus dolorem. Maxime quae sed mollitia, inventore quibusdam deserunt qui. Distinctio voluptatum cumque unde accusantium illo non molestias dolores perferendis eius itaque.</h6>
                     
                     <div class="portfolio-btn-container">
-                        <div class="portfolio-btn">
-                            <a href="javascript:void(0)"><h6>FIND OUT HOW</h6></a>
-                        </div>
-
+           
                         <div class="portfolio-btn">
                             <a href="https://kentaki-dev.github.io/download-data-tracker" target="blank"><h6>DOWNLOAD NOW</h6></a>
                         </div>
@@ -126,7 +125,7 @@
 
                     </div>
 
-                    <div class="portfolio-img-container">                
+                    <div data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000" class="portfolio-img-container">                
                         <img id="covid-data-tracker-2" src="./img/covid-data-tracker-5.png"/>
                         <img id="covid-data-tracker-1" src="./img/covid-data-tracker-1.png"/>
                         <img id="covid-data-tracker-3" src="./img/covid-data-tracker-2.png"/>
@@ -135,21 +134,15 @@
 
             </div>
 
-            <div class="digital-sti-lipa">
+            <div data-aos="fade-down" data-aos-offset="300" data-aos-duration="300" class="digital-sti-lipa">
 
                 <div class="portfolio-item-details">
                    
-    
                     <h3>Digital STI Lipa</h3>
                     <h1>VIRTUAL REALITY OF STI LIPA</h1>
                     <div class="portoflio-item-seperator"></div>
                     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corporis mollitia iusto earum! Minima in numquam ab odit, ipsa necessitatibus provident libero repudiandae, sed quidem quaerat quo quia natus dolorem. Maxime quae sed mollitia, inventore quibusdam deserunt qui. Distinctio voluptatum cumque unde accusantium illo non molestias dolores perferendis eius itaque.</h6>
-                    
-                    <div class="portfolio-btn-container">
-                        <div class="portfolio-btn">
-                            <a href="javascript:void(0)"><h6>FIND OUT HOW</h6></a>
-                        </div>
-                    </div>                    
+                            
         
                 </div>
 
@@ -161,9 +154,9 @@
 
                     <div class="portifio-item-showcase-digital-sti">
 
-                        <div class="portoflio-media-container">
+                        <div data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000" class="portoflio-media-container">
                             <div class="portfolio-phone-frame">
-                                <video id="ditigal-sti-video" src="./video/digital-sti.mp4" controls loop></video>
+                                <video id="ditigal-sti-video" src="./video/digital-sti.mp4" controls loop muted></video>
                             </div>
                          
                         </div>
@@ -182,7 +175,7 @@
             
             <!-- <img class="profile-picture" src="./img/me.jpg" width="150rem"/> -->
 
-            <div class="quote-text-container">
+            <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="800" class="quote-text-container">
                 <h1>ABOUT ME</h1>
                 <!-- <h4>Luke 1:37</h4> -->
             </div>        
@@ -193,7 +186,7 @@
 
             <div class="about-me-container">
             
-            <img class="profile-picture" src="./img/me.jpg" width="150rem"/>
+            <img data-aos="flip-right" data-aos-duration="1000" class="profile-picture" src="./img/me.jpg" width="150rem"/>
 
             <div class="about-me-text-container">
                 <h1>Kent Jordan</h1>
@@ -206,7 +199,7 @@
                 
                 <div class="portoflio-item-seperator"></div>
 
-                <div class="certificates-img-container">                
+                <div  data-aos="flip-up" data-aos-duration="1200" class="certificates-img-container">                
                     <div>
                         <img src="./img/cert-2.png" />
                         <p>STI Lipa Android App Competition</p>
@@ -231,7 +224,6 @@
 
         </div>
 
-
         <div class="vlog">
 
         </div> -->
@@ -245,7 +237,11 @@
         <script src="./js/typed.min.js"></script>
         <script src="./js/particles-initializer.js"></script>
 
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+        
     </body>
-
 
 </html>
