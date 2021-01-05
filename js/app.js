@@ -26,7 +26,7 @@ function pageOnLoad(){
     
     window.onload = () => {
 
-        welcomeH1.innerHTML = 'PAGE LOADED!';
+        welcomeH1.innerHTML = '';
         welcomeH5.innerHTML = 'CLICK ANYWHERE TO CONTINUE';
 
         welcome.addEventListener('click', ()=>{
