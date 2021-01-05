@@ -23,6 +23,11 @@ body{
     padding: 0;    
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* DESKTOP NAVIGATION BAR */
 
 .nav-bar{
